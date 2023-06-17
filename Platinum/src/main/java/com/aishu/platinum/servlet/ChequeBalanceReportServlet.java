@@ -40,7 +40,7 @@ public class ChequeBalanceReportServlet extends HttpServlet {
             }
 
             request.setAttribute("chequeBalances", chequeBalances);
-            request.getRequestDispatcher("cheque_balance_report.jsp").forward(request, response);
+            request.getRequestDispatcher("chequeBalanceReport.jsp").forward(request, response);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         } finally {
